@@ -82,9 +82,10 @@
 
     <target name="phpcs">
 	<exec executable="phpcs"> 
+	    <arg path="${project.basedir}" />
 	    <arg value="--report=checkstyle" />
 	    <arg value="--report-file=${project.basedir}/build/logs/checkstyle.xml" />
-	    <arg value="--standard=Zend ${basedir}" />
+	    <arg value="--standard=Zend ${project.basedir}" />
 	</exec>
     </target>
 
