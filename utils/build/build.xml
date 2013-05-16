@@ -87,7 +87,7 @@
 	    <arg value="--standard=${project.basedir}/build/phpcs.xml" />
 	    <arg path="${project.basedir}" />
 
-            <arg value="--reportfile" />
+            <arg value="--report-file" />
             <arg value="${project.basedir}/build/logs/checkstyle.xml" />
 
 
