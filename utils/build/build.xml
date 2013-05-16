@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+l<?xml version="1.0" encoding="UTF-8"?>
 <project name="TestJenkins" default="ci" basedir=".">
     <property name="source" value="workspace" />
 
@@ -81,20 +81,13 @@
     </target>
 -->
 
-    <target name="phpcs">
-	<exec executable="phpcs" >
-	    <arg value="--report=checkstyle" />
-	    <arg value="--standard=${project.basedir}/build/phpcs.xml" />
-	    <arg path="${project.basedir}" />
-
-            <arg value="--report-file" />
-            <arg value="${project.basedir}/build/logs/checkstyle.xml" />
-
-
-
-
+    <target name="phpcs" description="Generate checkstyle.xml using PHP_CodeSniffer">
+	<exec executable="phpcs">
+	    <arg line="--report=checkstyle 
+--report-file=${project.basedir}/build/logs/checkstyle.xml --standard=build/phpcs.xml ${source}/" />
 	</exec>
     </target>
+
 
     <target name="phpdoc">
     	<phpdoc title="API Documentation"
