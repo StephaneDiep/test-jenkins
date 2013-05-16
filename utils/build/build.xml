@@ -11,28 +11,28 @@
         <delete dir="${project.basedir}/build/api" />
         <delete dir="${project.basedir}/build/code-browser" />
         <delete dir="${project.basedir}/build/coverage" />
-<!--        <delete dir="${project.basedir}/build/logs" />-->
+        <delete dir="${project.basedir}/build/logs" />
         <delete dir="${project.basedir}/build/pdepend" />
 	<delete dir="${project.basedir}/build/phpmd" />
 
         <mkdir dir="${project.basedir}/build/api" />
         <mkdir dir="${project.basedir}/build/code-browser" />
         <mkdir dir="${project.basedir}/build/coverage" />
-<!--        <mkdir dir="${project.basedir}/build/logs" />-->
+        <mkdir dir="${project.basedir}/build/logs" />
         <mkdir dir="${project.basedir}/build/pdepend" />
 	<mkdir dir="${project.basedir}/build/phpmd" />
     </target>
 
     <target name="qa" description="Lance les outils d'analyse">
-<!--	<phingcall target="pdepend" />
+	<phingcall target="pdepend" />
 	<phingcall target="phpmd" />
     	<phingcall target="phpcpd" />
--->
+
 <!--	<phingcall target="phploc" />-->
-    	<phingcall target="phpcs" />
-<!--    	<phingcall target="phpdoc" />
+<!--    	<phingcall target="phpcs" />
+    	<phingcall target="phpdoc" />-->
     	<phingcall target="phpunit" />
-    	<phingcall target="phpcb" />-->
+<!--    	<phingcall target="phpcb" />-->
     </target>
 
     <target name="pdepend">
