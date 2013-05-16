@@ -41,12 +41,22 @@
             <logger type="overview-pyramid" outfile="${project.basedir}/build/pdepend/overview-pyramid.svg" />
         </phpdepend>
     </target>
-
+<!--
     <target name="phpmd">
         <phpmd file="${project.basedir}">
             <formatter type="html" outfile="${project.basedir}/build/phpmd/phpmd.html" />
 	    <formatter type="xml" outfile="${project.basedir}/build/phpmd/phpmd.xml" />
         </phpmd>
+    </target>
+-->
+    <target name="phpmd">
+        <exec executable="phpmd">
+            <arg path="${project.basedir}" />
+            <arg value="xml" />
+            <arg value="${project.basedir}/utils/build/phpmd_rules.xml" />
+            <arg value="--reportfile" />
+            <arg value="${project.basedir}/build/phpmd/phpmd.xml" />
+        </exec>
     </target>
 
     <target name="phpcpd">
