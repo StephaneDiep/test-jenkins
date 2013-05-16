@@ -4,16 +4,16 @@
 class a {
     public function __construt() {}
 
-    public function test() {
+    public function test($titi) {
 	$blabla = 5;
-	$toto = 2;
+	$toto = $_POST['foo'];
 	return true;
     }
 
     public $azertyuiopqsdfghjklmwxcvbn = 1;
 
     public function test2() {
-	$blablaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa = 4;
+	$blablaaaa = 4;
     }
 
     public function test_test() {
