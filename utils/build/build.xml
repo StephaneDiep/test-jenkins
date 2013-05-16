@@ -56,7 +56,6 @@
 	    <arg value="xml" />
 	    <arg value="${project.basedir}.build/phpmd/phpmd_rules.xml" />
 	    <arg value="--reportfile" />
-<echo ${project.basedir}>
 	    <arg value="${project.basedir}/build/phpmd/phpmd.xml" />
 
 
