@@ -105,15 +105,13 @@
     	</phpdoc>
     </target>
 
-<!--
-    <target name="phpunit">
+<!--    <target name="phpunit">
         <exec executable="phpunit">
 	    <arg line="--coverage-clover ${output}/CodeCoverage/clover.xml
 		--coverage-html ${output}/CodeCoverage/
 	    ."/>
 	</exec>
-    </target>
--->
+    </target>-->
 
     <target name="phpunit" description="Run unit tests with PHPUnit">
 	<exec executable="phpunit" failonerror="true"/>
