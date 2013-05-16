@@ -60,7 +60,7 @@
 	    <arg value="--reportfile" />
             <arg value="${project.basedir}/build/phpmd/phpmd.xml" />
 -->
-	    <arg line="--report-file=${project.basedir}/build/phpmd/phpmd.xml" />
+	    <arg line="--reportfile=${project.basedir}/build/phpmd/phpmd.xml" />
 
 	</exec>
     </target>
