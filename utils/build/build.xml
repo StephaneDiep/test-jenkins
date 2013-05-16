@@ -54,7 +54,7 @@
 	<exec executable="phpmd">
 	    <arg path="${project.basedir}" />
 	    <arg value="xml" />
-	    <arg value="${project.basedir}.build/utils/build/phpmd_rules.xml" />
+	    <arg value="${project.basedir}/utils/build/phpmd_rules.xml" />
 	    <arg value="--reportfile" />
 	    <arg value="${project.basedir}/build/phpmd/phpmd.xml" />
 
