@@ -69,7 +69,7 @@
     <target name="phploc">
         <exec logoutput="true" dir="${project.basedir}" command="phploc --log-csv '${project.basedir}/build/logs/phploc.csv' '${project.basedir}'" escape="false" />
     </target>
-<!--
+
     <target name="phpcs">
         <phpcodesniffer standard="Zend">
             <fileset dir="${project.basedir}">
@@ -78,8 +78,9 @@
             <formatter type="checkstyle" outfile="${project.basedir}/build/logs/checkstyle.xml"/>
     	</phpcodesniffer>
     </target>
--->
 
+
+<!--
     <target name="phpcs">
 	<exec executable="phpcs"> 
 	    <arg path="${project.basedir}" />
@@ -88,6 +89,7 @@
 	    <arg value="--standard=Zend ${project.basedir}" />
 	</exec>
     </target>
+-->
 
     <target name="phpdoc">
     	<phpdoc title="API Documentation"
