@@ -1,6 +1,6 @@
 <?php
 
-class a {
+class a_a {
     public function __construt() {}
 
     public function test($titi) {
@@ -9,10 +9,10 @@ class a {
 	return true;
     }
 
-    public $azertyuiopqsdfghjklmwxcvbn = 1;
+    public $azertyuiop_qsdfghjklmwxcvbn = 1;
 
-    public function test2() {
-	$blablaaaa = 4;
+    public function te_st2($ti_ti) {
+	$blabla_aaa = 4;
     }
 
     public function example() { 
