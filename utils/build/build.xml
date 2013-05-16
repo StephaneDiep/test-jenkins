@@ -49,17 +49,6 @@
         </phpmd>
     </target>
 
-<!--
-    <target name="phpmd">
-	<exec executable="phpmd">
-	    <arg path="${project.basedir}" />
-	    <arg value="xml" />
-	    <arg value="${project.basedir}/utils/build/phpmd_rules.xml" />
-	    <arg value="--reportfile" />
-	    <arg value="${project.basedir}/build/phpmd/phpmd.xml" />
-	</exec>
-    </target>
--->
     <target name="phpcpd">
     	<phpcpd file="${project.basedir}">
             <formatter type="pmd" outfile="${project.basedir}/build/logs/pmd-cpd.xml"/>
