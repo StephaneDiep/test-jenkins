@@ -3,7 +3,8 @@
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
          strict="true"
-         verbose="true">
+         verbose="true"
+	 codecoverage="true">
        
   <testsuites>
     <testsuite name="ProjectName">
