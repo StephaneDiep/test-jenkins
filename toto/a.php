@@ -3,7 +3,7 @@
 class a_a {
     public function __construt() {}
 
-    public function test($titi) {
+    public function toto($titi) {
 	$blabla = 5;
 	$toto = $_POST['foo'];
 	return true;
