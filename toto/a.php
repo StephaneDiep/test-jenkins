@@ -14,7 +14,6 @@ class a_a {
     public function te_st2($ti_ti) {
 	$blabla_aaa = 4;
 	$blabla = 5;
-//	$toto = $_POST['foo'];
 	return true;
     }
 
