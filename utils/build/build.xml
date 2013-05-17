@@ -107,7 +107,11 @@
 
 
     <target name="phpunit" description="Run unit tests with PHPUnit">
-	<exec logoutput="true" dir="${project.basedir}/test" command="phpunit" escape="false" />
+	<exec logoutput="true" dir="${project.basedir}/test" command="phpunit" escape="false" >
+	    <arg line="--coverage-clover ${project.basedir}/build/logs/clover.xml
+                --coverage-html ${project.basedir}/build/logs/
+                ."/>
+	</exec>
     </target>
 
     <target name="phpcb">
