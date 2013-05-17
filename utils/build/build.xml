@@ -105,10 +105,17 @@
     	</phpdoc>
     </target>
 
-
+<!--
     <target name="phpunit" description="Run unit tests with PHPUnit">
 	<exec executable="phpunit" logoutput="true" dir="${project.basedir}/test" escape="false" />
     </target>
+-->
+
+<target name="phpunit" description="Run unit tests using PHPUnit and generates junit.xml and clover.xml">
+        <exec logoutput="true"
+            command="phpunit --configuration=${project.basedir}/test/phpunit.xml --log-junit=${project.basedir}/build/logs/junit.xml --coverage-clover=${project.basedir}/build/logs/clover.xml" />
+    </target>
+
 
     <target name="phpcb">
     	<exec logoutput="true" command="phpcb --log '${project.basedir}/build/logs' --source '${project.basedir}' --output '${project.basedir}/build/code-browser'" escape="false" />
