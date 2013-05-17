@@ -106,7 +106,7 @@
     </target>
 
     <target name="phpunit" description="Run unit tests with PHPUnit">
-	<exec executable="phpunit" logoutput="true" dir="${project.basedir}/test" escape="false" />
+	<exec command="phpunit" logoutput="true" dir="${project.basedir}/test" escape="false" />
     </target>
 
 
