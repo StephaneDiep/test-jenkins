@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         strict="true"
+         verbose="true">
        
     <testsuites>
         <testsuite name="ProjectName">
@@ -18,7 +21,7 @@
 
     <filter>
         <whitelist>
-            <directory suffix=".php">../</directory>
+            <directory suffix=".php"></directory>
         </whitelist>
     </filter>
 
