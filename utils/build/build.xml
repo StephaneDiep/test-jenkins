@@ -86,7 +86,8 @@
  --report=checkstyle 
  --report-file=${project.basedir}/build/logs/checkstyle.xml
  ${project.basedir}/test3.php"
- logoutput="true" checkreturn="true" />
+ checkreturn="true"
+ logoutput="true" />
  </target>
 
 
