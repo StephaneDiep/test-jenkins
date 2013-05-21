@@ -82,12 +82,12 @@
 -->
 
 <target name="phpcs" description="Find coding standard violations using PHP_CodeSniffer creating a log file for the continuous integration server">
-  <exec executable="phpcs">
-   <arg value="--report=checkstyle" />
-   <arg value="--report-file=${project.basedir}/build/logs/checkstyle.xml" />
-   <arg value="--extensions=php" />
-   <arg path="${project.basedir}/test3.php" />
-  </exec>
+  <exec command="phpcs 
+ --report=checkstyle 
+ --report-file=${project.basedir}/build/logs/checkstyle.xml
+ --extensions=php
+ ${project.basedir}/test3.php
+ logoutput="true" />
  </target>
 
 
