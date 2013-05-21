@@ -85,7 +85,6 @@
   <exec command="phpcs 
  --report=checkstyle 
  --report-file=${project.basedir}/build/logs/checkstyle.xml
- --extensions=php
  ${project.basedir}/test3.php"
  logoutput="true" />
  </target>
