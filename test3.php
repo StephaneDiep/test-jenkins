@@ -1,10 +1,10 @@
 <?php
 include 'toto/a.php';
-echo 'test3';
+  echo 'test3';
 
 echo 'coucou';
 
-blabla
+   blabla
 hello
 test
 $a = new a();
