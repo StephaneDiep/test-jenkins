@@ -70,7 +70,7 @@
         <exec logoutput="true" dir="${project.basedir}" command="phploc --log-csv '${project.basedir}/build/logs/phploc.csv' '${project.basedir}'" escape="false" />
     </target>
 
-<!--
+
     <target name="phpcs">
         <phpcodesniffer standard="Zend">
             <fileset dir="${project.basedir}">
@@ -79,14 +79,8 @@
             <formatter type="checkstyle" outfile="${project.basedir}/build/logs/checkstyle.xml"/>
     	</phpcodesniffer>
     </target>
--->
 
-    <target name="phpcs" description="Generate checkstyle.xml using PHP_CodeSniffer">
-	<exec executable="phpcs">
-	    <arg line="--report=checkstyle 
---report-file=${project.basedir}/build/logs/checkstyle.xml --standard=build/phpcs.xml ${source}/" />
-	</exec>
-    </target>
+
 
 
     <target name="phpdoc">
