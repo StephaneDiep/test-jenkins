@@ -86,7 +86,7 @@
     <arg line="--report=checkstyle 
  --report-file=${project.basedir}/build/logs/checkstyle.xml
  --standard=Zend
- ${project.basedir}/test/UtilsTest.php" />
+ ${project.basedir}/test/*.php" />
   </exec>
  </target>
 
