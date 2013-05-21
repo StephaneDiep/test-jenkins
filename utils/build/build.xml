@@ -85,7 +85,7 @@
   <exec executable="phpcs" output="true">
    <arg value="--report=checkstyle" />
    <arg value="--report-file=${project.basedir}/build/logs/checkstyle.xml" />
-   <arg value="--standard=${project.basedir}/build/phpcs.xml" />
+   <arg value="--standard=${project.basedir}/utils/build/phpcs.xml" />
    <arg path="${project.basedir}/${source}" />
   </exec>
  </target>
