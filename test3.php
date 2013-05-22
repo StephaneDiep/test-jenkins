@@ -7,9 +7,16 @@ echo 'coucou';
    blabla
 hello
 test
-$a = new a();
+$a= new a();
 echo $a->test();
 $b = 3;
+
+function test() {
+	if ($toto) {
+		return false;
+	}
+	return true;
+}
 
 
 ?>
