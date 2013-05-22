@@ -8,7 +8,7 @@
     />
 
     <target name="clean" description="Vide les répertoires d'artefacts">
-<!--        <delete dir="${project.basedir}/build/api" />
+        <delete dir="${project.basedir}/build/api" />
         <delete dir="${project.basedir}/build/code-browser" />
         <delete dir="${project.basedir}/build/coverage" />
         <delete dir="${project.basedir}/build/logs" />
@@ -21,18 +21,18 @@
         <mkdir dir="${project.basedir}/build/logs" />
         <mkdir dir="${project.basedir}/build/pdepend" />
 	<mkdir dir="${project.basedir}/build/phpmd" />
--->
+
     </target>
 
     <target name="qa" description="Lance les outils d'analyse">
-<!--	<phingcall target="pdepend" />-->
-<!--	<phingcall target="phpmd" />-->
-<!--    	<phingcall target="phpcpd" />-->
-<!--	<phingcall target="phploc" />-->
-<!--    	<phingcall target="phpcs" />-->
-<!--    	<phingcall target="phpdoc" />-->
-<!--    	<phingcall target="phpunit" />-->
-<!--    	<phingcall target="phpcb" />-->
+	<phingcall target="pdepend" />
+	<phingcall target="phpmd" />
+    	<phingcall target="phpcpd" />
+	<phingcall target="phploc" />
+    	<phingcall target="phpcs" />
+    	<phingcall target="phpdoc" />
+    	<phingcall target="phpunit" />
+    	<phingcall target="phpcb" />
     </target>
 
     <target name="pdepend">
