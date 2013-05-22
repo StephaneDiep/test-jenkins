@@ -4,7 +4,7 @@ class a_a {
     public function __construt() {}
 
     public function toto($titi) {
-	$blabla = 5;
+        $blabla = 5;
 	return true;
     }
 
