@@ -1,4 +1,9 @@
 <?php
 phpinfo();
-branche micado3
-modif branche micado3 2
+echo 'branche master';
+Modification pour "correctif"
+Modification branche 2 !
+Modification branche 1
+Autre modification branche 2
+modification branche micadoOptimisation
+modif 2
